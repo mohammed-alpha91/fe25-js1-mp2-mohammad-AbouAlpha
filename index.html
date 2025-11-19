@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/javascript.js" defer></script>
+<link rel="stylesheet" href="/css/style.css">    <title>Pig Dice Game</title>
+</head>
+<body>
+      <h1>Pig Dice Game</h1>
+
+      <form id="nameForm" class="">
+        <label for="playerName">Type your name:</label>
+        <input id="playerName" type="text"  placeholder="Your Name" required>
+        <button type="submit">Start Game</button>
+      </form>
+      <p id="welcomeMessage"></p>
+
+      <div id="gamePlay" class="hidden"> 
+      <p>Player: <span id="nameDisplay"></span><p>
+      <p>Total Score: <span id="totalScore">0</span></p>
+      <p>Round Score: <span id="roundScore">0</span></p>
+      <p>Number Of Rounds: <span id="rounds">0</span></p>
+      <button  id="rollButton">Roll Dice</button>
+<span id="diceThrow"></span> 
+<br>
+<button id="collectButton">Collect Points</button>
+
+</div>
+
+
+<div id="winner"></div>
+
+
+
+<div id="pigImageContainer">
+<img src="pig-dice.png.webp" alt="picture of pig">
+</div>
+</body>
+</html>
