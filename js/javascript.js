@@ -44,6 +44,8 @@ function rollDice() {
 function collect() {
   const pointsToAdd = roundScore;
   totalScore += pointsToAdd;
+  rounds++;
+  document.getElementById("rounds").textContent = rounds;
 
   if (roundScore >= 100 || totalScore >= 100) {
     document.getElementById("winner").innerText = "CONGRATULATIONS, YOU WON IN "+ rounds + "rounds"
@@ -53,8 +55,6 @@ function collect() {
   roundScore = 0;
   document.getElementById("roundScore").textContent = roundScore;
   document.getElementById("diceThrow").textContent = "";
-  rounds++;
-    document.getElementById("rounds").textContent = rounds;
 
 }
 
@@ -62,5 +62,6 @@ function collect() {
 
 document.getElementById("rollButton").addEventListener("click", rollDice);
 document.getElementById("collectButton").addEventListener("click", collect);
+
 
 
